@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BLOGIT</h1>
+    <div class = "container">
+        <h2>Welcome, <span id="user"></span>!</h2>
+        <button onclick="logout()">Sign Out</button>  
+
+
+        <h3>Write a Blog Post</h3>
+        <input type="text" id="title" placeholder="Title" >
+        <textarea id="content" placeholder="Content" ></textarea>
+        <button onclick="post()">Post Blog</button>
+
+
+        <h3>Recent Blog Posts</h3>
+        <div id="bloglist"></div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BLOGIT</h1>
+    <div class = "container">
+        <h2>Login</h2>
+        <input type="text" id="login_username" placeholder="Username"  />
+        <input type="password" id="login_password" placeholder="Password"  />
+        <button onclick="login()">Login</button>
+        <p id="login_errormsg" class="error"></p>
+    </div>
+    <div class = "container">
+        <h2>Signup</h2>
+        <input type="text" id="newusername" placeholder="Username"  >
+        <input type="password" id="newpassword" placeholder="Set Password"  >
+        <input type="password" id="confpassword" placeholder="Confirm Password"  >
+        <button onclick="signup()">Signup</button>
+        <p id="signup_errormsg" class="error"></p>
+    </div>
+
+    <script src="auth.js"></script>
+
+
+</body>
+</html>
